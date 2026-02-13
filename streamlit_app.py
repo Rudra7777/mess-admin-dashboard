@@ -225,10 +225,10 @@ with chart1:
     fig_line.update_layout(
         plot_bgcolor="white", paper_bgcolor="white",
         margin=dict(l=0, r=0, t=10, b=0), height=300,
-        legend=dict(orientation="h", yanchor="bottom", y=-0.25, xanchor="center", x=0.5),
-        xaxis=dict(gridcolor="#E2E8F0", showline=False),
-        yaxis=dict(gridcolor="#E2E8F0", showline=False),
-        font=dict(family="Inter", color="#64748B"),
+        legend=dict(orientation="h", yanchor="bottom", y=-0.25, xanchor="center", x=0.5, font=dict(size=13, color="#0F172A")),
+        xaxis=dict(gridcolor="#E2E8F0", showline=False, tickfont=dict(size=12, color="#0F172A")),
+        yaxis=dict(gridcolor="#E2E8F0", showline=False, tickfont=dict(size=12, color="#0F172A")),
+        font=dict(family="Inter", color="#0F172A"),
     )
     st.plotly_chart(fig_line, use_container_width=True, config={"displayModeBar": False})
     st.markdown('</div>', unsafe_allow_html=True)
@@ -247,8 +247,8 @@ with chart2:
     fig_pie.update_layout(
         paper_bgcolor="white",
         margin=dict(l=0, r=0, t=10, b=0), height=300,
-        legend=dict(orientation="h", yanchor="bottom", y=-0.15, xanchor="center", x=0.5),
-        font=dict(family="Inter", color="#64748B"),
+        legend=dict(orientation="h", yanchor="bottom", y=-0.15, xanchor="center", x=0.5, font=dict(size=13, color="#0F172A")),
+        font=dict(family="Inter", color="#0F172A"),
     )
     st.plotly_chart(fig_pie, use_container_width=True, config={"displayModeBar": False})
     st.markdown('</div>', unsafe_allow_html=True)
